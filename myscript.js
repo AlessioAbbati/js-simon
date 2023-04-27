@@ -18,6 +18,16 @@ let countDown = setInterval(function () {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+    // aggiungo il conto in html
+    document.getElementById("count").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+    // quando si esaurisce il conto manda un messaggio 
+    if (distance < 0) {
+        clearInterval(countDown);
+        document.getElementById("count").innerHTML = "Toast to a new exercise";
+    }
+
 }, 1000);
 
 
