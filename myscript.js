@@ -9,6 +9,9 @@ let countDown = setInterval(function () {
     // aggiungo data e ora di oggi
     let now = new Date().getTime();
 
+    // inserisco la distanza tra oggi e il giorno del conto alla rovescia
+    let distance = countDownDate - now;
+
 }, 1000);
 
 
