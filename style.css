@@ -1,0 +1,12 @@
+body {
+    background-image: url("img/1-1.webp");
+    background-size: cover;
+    position: relative;
+}
+#count {
+    color: yellow;
+    position: absolute;
+    top: 19.5rem;
+    left: 43rem;
+    font-size: 1.5rem;
+}
